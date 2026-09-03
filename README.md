@@ -1,5 +1,7 @@
 # Jingyan Cuiqu · 经验萃取（Experience Extraction Skill）
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
 An AI skill that turns the tacit knowledge of top performers — sales champions, experts, veterans — into repeatable, trainable, verifiable assets. 把高手"会做但说不清"的经验，变成"看得见、学得会、用得着"的组织资产。
 
 ## Who is this for?
@@ -22,7 +24,7 @@ An AI skill that turns the tacit knowledge of top performers — sales champions
 
 ### As a skill
 
-1. 把 `jingyan-cuiqu` 文件夹放到你的 Agent 的 skill 目录（如 `~/.claude/skills/`）
+1. 把 `cj-jingyan-cuiqu` 文件夹放到你的 Agent 的 skill 目录（如 `~/.claude/skills/`，或豆包工作等 AI 工具的技能目录）
 2. 对你的 Agent 说：
    - "帮我萃取这个销冠开发大客户的经验" → 走个人模式
    - "给我们销售团队做一套经验萃取和复制方案" → 走组织模式
@@ -60,7 +62,7 @@ An AI skill that turns the tacit knowledge of top performers — sales champions
 ## Skill structure
 
 ```
-jingyan-cuiqu/
+cj-jingyan-cuiqu/
 ├── SKILL.md                        # 主流程：定 → 萃 → 用 + 标准四环 + 核心原则
 └── references/
     ├── mode-individual.md          # 个人模式：萃一个人的全流程
@@ -70,4 +72,16 @@ jingyan-cuiqu/
     └── ai-assist.md                # AI 辅助萃取（6感模型 / 灵魂三问 / 训战模板）
 ```
 
-Built by Jie Cai with Claude Code. 方法论框架源自 AACTP「经验萃取」全景案例大会（刘永中 / 叶敬秋 / 曾子亮 / 陈晓燕 / 周珊）。
+## Author
+
+**Jie Cai**（GitHub: [Evelyn-Jie](https://github.com/Evelyn-Jie)）— AI 创业者、企业培训与组织经验萃取实践者、AI 社群组织者。长期研究一个命题：**如何把高手头脑里的经验，变成组织能复制的资产。**
+
+- 邮箱：caijie@zhishu-tech.com
+- GitHub 组织：https://github.com/Silong-AI
+- GitHub 个人：https://github.com/Evelyn-Jie
+
+Built with 豆包工作（Doubao Work）. 方法论框架汲取自 AACTP「经验萃取」系列公开方法论。
+
+## License
+
+[MIT](LICENSE) © 2026 Jie Cai
