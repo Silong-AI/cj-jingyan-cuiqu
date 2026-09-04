@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="420" viewBox="0 0 760 420" font-family="'PingFang SC','Microsoft YaHei','Segoe UI',Arial,sans-serif">
+  <rect width="760" height="420" rx="16" fill="#F6F5F1"/>
+  <text x="380" y="46" text-anchor="middle" font-size="22" font-weight="700" fill="#1A1B1C">经验萃取生态定位</text>
+  <text x="380" y="72" text-anchor="middle" font-size="13" fill="#6B7280">Experience Extraction Ecosystem</text>
+
+  <!-- 上半：三个生态伙伴 -->
+  <rect x="36" y="104" width="200" height="118" rx="14" fill="#FFFFFF" stroke="#E4E3DD"/>
+  <text x="136" y="140" text-anchor="middle" font-size="16" font-weight="700" fill="#3D5AA8">nuwa-skill</text>
+  <text x="136" y="166" text-anchor="middle" font-size="14" fill="#1A1B1C">蒸「人」</text>
+  <text x="136" y="192" text-anchor="middle" font-size="12" fill="#6B7280">人物思维 · 表达 DNA</text>
+
+  <rect x="280" y="104" width="200" height="118" rx="14" fill="#FFFFFF" stroke="#E4E3DD"/>
+  <text x="380" y="140" text-anchor="middle" font-size="16" font-weight="700" fill="#3D5AA8">cangjie-skill</text>
+  <text x="380" y="166" text-anchor="middle" font-size="14" fill="#1A1B1C">蒸「书 / 视频」</text>
+  <text x="380" y="192" text-anchor="middle" font-size="12" fill="#6B7280">方法论 · 可执行 skills</text>
+
+  <rect x="524" y="104" width="200" height="118" rx="14" fill="#FFFFFF" stroke="#E4E3DD"/>
+  <text x="624" y="140" text-anchor="middle" font-size="16" font-weight="700" fill="#3D5AA8">darwin-skill</text>
+  <text x="624" y="166" text-anchor="middle" font-size="14" fill="#1A1B1C">进化任意 skill</text>
+  <text x="624" y="192" text-anchor="middle" font-size="12" fill="#6B7280">评测驱动 · 自动迭代</text>
+
+  <!-- 箭头 -->
+  <path d="M380 222 L380 250" stroke="#C7C9D4" stroke-width="2"/>
+  <path d="M376 244 L380 254 L384 244" fill="none" stroke="#C7C9D4" stroke-width="2"/>
+
+  <!-- CJ 主卡（高亮） -->
+  <rect x="36" y="258" width="688" height="128" rx="16" fill="#EAF0FB" stroke="#3D5AA8" stroke-width="2.5"/>
+  <text x="380" y="296" text-anchor="middle" font-size="20" font-weight="700" fill="#1A1B1C">CJ·经验萃取（本 Skill）</text>
+  <text x="380" y="326" text-anchor="middle" font-size="15" fill="#3D5AA8" font-weight="600">蒸「组织内的高手」</text>
+  <text x="380" y="354" text-anchor="middle" font-size="13" fill="#4B5563">把销冠 / 专家 / 老员工的隐性打法</text>
+  <text x="380" y="374" text-anchor="middle" font-size="13" fill="#4B5563">→ 转成团队可训练 · 可验证 · 可进化的技能包</text>
+</svg>

@@ -1,0 +1,79 @@
+{
+  "schema_version": "1.0",
+  "pack_id": "cj-jingyan-cuiqu",
+  "target": "trigger-evals",
+  "description": "CJ·经验萃取 触发评测语料（10 例），对应 references/trigger-evals.md §1.1。每次改版后用 scripts/run_evals.py 回归。",
+  "generated_by": "CJ·经验萃取 v3.1",
+  "tests": [
+    {
+      "id": "T1",
+      "prompt": "帮我萃一下我们销冠的成功经验",
+      "expect_trigger": true,
+      "expect_route": "组织模式",
+      "note": "明确组织级：团队内销冠"
+    },
+    {
+      "id": "T2",
+      "prompt": "想把老王做单子那套方法整理出来",
+      "expect_trigger": true,
+      "expect_route": "个人模式",
+      "note": "明确个人：老王"
+    },
+    {
+      "id": "T3",
+      "prompt": "团队新人上手太慢，怎么办",
+      "expect_trigger": true,
+      "expect_route": "场景诊断 → 组织模式",
+      "note": "模糊需求，先诊断再分流"
+    },
+    {
+      "id": "T4",
+      "prompt": "把我自己的经验沉淀成一个手册",
+      "expect_trigger": true,
+      "expect_route": "个人模式·萃自己",
+      "note": "萃自己"
+    },
+    {
+      "id": "T5",
+      "prompt": "这段录音帮我整理成经验",
+      "expect_trigger": true,
+      "expect_route": "素材萃取 → ai-assist",
+      "note": "带素材"
+    },
+    {
+      "id": "T6",
+      "prompt": "萃一个电商大促复盘的经验",
+      "expect_trigger": true,
+      "expect_route": "复盘+萃取（组织/个人）",
+      "note": "复盘后萃取"
+    },
+    {
+      "id": "T7",
+      "prompt": "写一封给客户的邮件",
+      "expect_trigger": false,
+      "expect_route": "拒绝/换 skill",
+      "note": "负例：不触发"
+    },
+    {
+      "id": "T8",
+      "prompt": "帮我算一下这个月业绩",
+      "expect_trigger": false,
+      "expect_route": "拒绝/换 skill",
+      "note": "负例：不触发"
+    },
+    {
+      "id": "T9",
+      "prompt": "培训课上怎么把销冠方法讲给新人",
+      "expect_trigger": true,
+      "expect_route": "组织模式·教学封装",
+      "note": "弱信号触发"
+    },
+    {
+      "id": "T10",
+      "prompt": "萃经验",
+      "expect_trigger": true,
+      "expect_route": "入口分流询问",
+      "note": "极简输入，需分流询问"
+    }
+  ]
+}

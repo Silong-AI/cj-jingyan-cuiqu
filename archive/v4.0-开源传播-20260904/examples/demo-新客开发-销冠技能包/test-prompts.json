@@ -1,0 +1,40 @@
+{
+  "pack_id": "xj-sp-20260904-xinkehai",
+  "tests": [
+    {
+      "id": "xkh-t01",
+      "type": "trigger",
+      "prompt": "客户说要考虑一下，怎么推进成交？",
+      "expect_trigger": "xkh-002-probe",
+      "expect_keywords": ["第三问", "最在意哪一点"]
+    },
+    {
+      "id": "xkh-t02",
+      "type": "trigger",
+      "prompt": "陌生客户第一次电话，开口说什么？",
+      "expect_trigger": "xkh-001-seed",
+      "expect_keywords": ["不是找您卖产品", "同步信息"]
+    },
+    {
+      "id": "xkh-t03",
+      "type": "boundary",
+      "prompt": "客户已经明确要买我们的产品了，还用帮忙法吗？",
+      "expect_trigger": "xkh-001-seed",
+      "expect_boundary": "不适用，应直接谈需求"
+    },
+    {
+      "id": "xkh-t04",
+      "type": "trigger",
+      "prompt": "怎么让老客户多帮我介绍新客户？",
+      "expect_trigger": "xkh-003-seed-build",
+      "expect_keywords": ["当顾问", "军师", "陪建"]
+    },
+    {
+      "id": "xkh-t05",
+      "type": "evolution",
+      "prompt": "给第一通电话帮忙法加一个适用短视频获客的变体",
+      "expect_trigger": "xkh-001-seed",
+      "expect_keywords": ["变体", "边界"]
+    }
+  ]
+}

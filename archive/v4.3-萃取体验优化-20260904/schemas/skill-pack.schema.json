@@ -1,0 +1,52 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://cj-experience-extraction/schemas/skill-pack.schema.json",
+  "title": "CJ·经验萃取 技能包清单 (skill-pack.yaml)",
+  "description": "校验团队技能包的机器可读清单结构，保证生态工具可解析。",
+  "type": "object",
+  "required": ["schema_version", "pack_id", "name", "type", "capabilities"],
+  "properties": {
+    "schema_version": { "type": "string" },
+    "pack_id": { "type": "string", "pattern": "^[a-z0-9\\-]+$" },
+    "name": { "type": "string" },
+    "type": { "enum": ["team-skill-pack", "personal-pack", "framework-pack"] },
+    "industry": { "type": "string" },
+    "generated_by": { "type": "string" },
+    "generated_at": { "type": "string" },
+    "entry": {
+      "type": "object",
+      "required": ["name", "description"],
+      "properties": {
+        "name": { "type": "string" },
+        "description": { "type": "string" }
+      }
+    },
+    "capabilities": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["id", "name", "level", "file"],
+        "properties": {
+          "id": { "type": "string", "pattern": "^[a-z0-9\\-]+$" },
+          "name": { "type": "string" },
+          "level": { "enum": ["基操", "方法", "牛招", "心法", "边界"] },
+          "file": { "type": "string" },
+          "trigger": { "type": "string" }
+        }
+      }
+    },
+    "verification": {
+      "type": "object",
+      "properties": {
+        "v1_cross_domain": { "type": "boolean" },
+        "v2_predictive": { "type": "boolean" },
+        "v3_unique": { "type": "boolean" }
+      }
+    },
+    "compatible_with": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  }
+}

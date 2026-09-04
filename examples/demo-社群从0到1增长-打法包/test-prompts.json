@@ -1,0 +1,40 @@
+{
+  "pack_id": "cj-sp-20260904-shequn-zengzhang",
+  "tests": [
+    {
+      "id": "sq-t01",
+      "type": "trigger",
+      "prompt": "我想做一个社群，第一批人怎么拉？",
+      "expect_trigger": "sq-001-coldstart",
+      "expect_keywords": ["朋友圈", "冷启动", "种子用户"]
+    },
+    {
+      "id": "sq-t02",
+      "type": "trigger",
+      "prompt": "社群每天发什么内容才能活跃？",
+      "expect_trigger": "sq-002-daily-report",
+      "expect_keywords": ["日报", "内容", "活跃"]
+    },
+    {
+      "id": "sq-t03",
+      "type": "trigger",
+      "prompt": "社群怎么从几十人涨到上千人？",
+      "expect_trigger": "sq-003-guest-funnel",
+      "expect_keywords": ["嘉宾", "导流", "增长"]
+    },
+    {
+      "id": "sq-t04",
+      "type": "boundary",
+      "prompt": "聚合日报适合养生社群吗？",
+      "expect_trigger": "sq-002-daily-report",
+      "expect_boundary": "未必合适，要看领域更新频率和社群目标，可改为周报/精选"
+    },
+    {
+      "id": "sq-t05",
+      "type": "trigger",
+      "prompt": "做社群冷启动发朋友圈怎么写？",
+      "expect_trigger": "sq-001-coldstart",
+      "expect_keywords": ["递进式", "三连发", "话术"]
+    }
+  ]
+}

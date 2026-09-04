@@ -1,0 +1,41 @@
+# skill-pack.yaml — 新客开发团队技能包清单
+schema_version: "1.0"
+pack_id: "xj-sp-20260904-xinkehai"
+name: "新客开发"
+type: "team-skill-pack"
+industry: "B2B销售"
+generated_by: "CJ·经验萃取 v2.2"
+generated_at: "2026-09-04"
+
+# 触发入口（供 Agent / 生态工具识别）
+entry:
+  name: "xinkehai-entry"
+  description: "处理新客开发相关问题：从陌生线索到首次成交的完整打法。触发：新客开发、约见、挖需求、转介绍。"
+
+capabilities:
+  - id: "xkh-001-seed"
+    name: "第一通电话帮忙法"
+    level: "牛招"
+    file: "干法库/xkh-001-第一通电话帮忙法.md"
+    trigger: "陌生客户第一通电话怎么打"
+  - id: "xkh-002-probe"
+    name: "需求探针三问"
+    level: "牛招"
+    file: "干法库/xkh-002-需求探针三问.md"
+    trigger: "如何挖出客户真实需求"
+  - id: "xkh-003-seed-build"
+    name: "种子陪建法"
+    level: "牛招"
+    file: "干法库/xkh-003-种子陪建法.md"
+    trigger: "如何获得高质量转介绍"
+
+verification:
+  v1_cross_domain: true
+  v2_predictive: true
+  v3_unique: true
+
+compatible_with:
+  - "claude-code"
+  - "codex"
+  - "npx-skills"
+  - "darwin-skill"

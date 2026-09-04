@@ -1,0 +1,44 @@
+# skill-pack.yaml
+schema_version: "1.0"
+pack_id: "cj-sp-20260904-shequn-zengzhang"
+name: "社群从0到1增长打法包"
+type: "team-skill-pack"
+industry: "社群运营/知识社群"
+generated_by: "CJ·经验萃取 v4.1"
+generated_at: "2026-09-04"
+
+# 触发入口（供 Agent 识别）
+entry:
+  name: "shequn-zengzhang-entry"
+  description: "处理社群从0到1增长相关问题：冷启动、内容引擎、拉新渠道、跨领域迁移"
+
+# 打法清单（每条一个 capability_id）
+capabilities:
+  - id: "sq-001-coldstart"
+    name: "朋友圈递进式冷启动三连发"
+    file: "打法库/sq-001-朋友圈递进式冷启动三连发.md"
+    level: "牛招"
+    trigger: "社群第一批种子用户怎么来/冷启动怎么做"
+  - id: "sq-002-daily-report"
+    name: "聚合式日报五模块"
+    file: "打法库/sq-002-聚合式日报五模块.md"
+    level: "牛招"
+    trigger: "社群靠什么持续活跃/内容怎么做"
+  - id: "sq-003-guest-funnel"
+    name: "嘉宾场景高信任导流"
+    file: "打法库/sq-003-嘉宾场景高信任导流.md"
+    level: "牛招"
+    trigger: "社群怎么从几十人涨到上千人/关键增长渠道"
+
+# 验证状态
+verification:
+  v1_cross_domain: true
+  v2_predictive: true
+  v3_unique: true
+
+# 生态兼容
+compatible_with:
+  - "claude-code"
+  - "codex"
+  - "npx-skills"
+  - "darwin-skill"
